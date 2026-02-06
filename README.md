@@ -142,6 +142,7 @@ The innovation lies in simplifying carbon footprint awareness through an accessi
 ## 👩‍💻 Author
 
 Paavni Bhargava
+
 BTech 1st Year Project  
 Environmental Awareness + Web Development
 
