@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="assessment-subtitle">🌍 Carbon Footprint Assessment</h2>
+<p class="subtitle">
+Fill in the details below to understand how your lifestyle impacts the environment.
+</p>
+
+<form method="post" class="assessment-form">
+
+<div class="input-grid">
+    <!-- ELECTRICITY -->
+    <div class="input-card">
+        <h3>⚡ Electricity Usage</h3>
+        <p>Average monthly electricity consumption of your household.</p>
+
+        <div class="value-unit-row">
+            <input type="number" name="electricity" placeholder="Enter value" min="0">
+            <select>
+                <option value="kwh">kWh/day</option>
+                <option value="units">Units</option>
+                <option value="monthly">Monthly Avg</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="input-card">
+        <h3>🎛️ Appliance Usage</h3>
+
+        <div class="input-group">
+            <p>High-power appliance usage (hours/day)</p>
+            <input type="number" id="applianceHours" min="0" step="0.5" placeholder="e.g. 4">
+        </div>
+    </div>
+
+    <!-- TRANSPORT -->
+    <div class="input-card">
+        <h3>🚗 Transportation</h3>
+        <p>Total distance travelled using personal vehicles per month.</p>
+
+        <div class="value-unit-row">
+            <input type="number"name="transport" placeholder="Enter distance" min="0">
+
+            <select>
+                <option value="km">Kilometers</option>
+                <option value="miles">Miles</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="input-card">
+        <h3>🚘 Vehicle Type</h3>
+
+        <div class="input-group">
+            <p>Select your primary vehicle</p>
+            <select id="vehicleType">
+                <option>Select vehicle type</option>
+                <option value="petrol">Petrol Car</option>
+                <option value="diesel">Diesel Car</option>
+                <option value="electric">Electric Vehicle</option>
+                <option value="public">Public Transport</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- FOOD -->
+    <div class="input-card">
+        <h3>🍽 Food Consumption</h3>
+        <p>Diet type significantly affects carbon emissions.</p>
+
+        <select name="food" required>
+            <option>Select your diet</option>
+            <option value="125">Vegetarian</option>
+            <option value="225">Mixed Diet</option>
+            <option value="300">Non-Vegetarian</option>
+            <option value="300">Vegan</option>
+        </select>
+    </div>
+
+    <div class="input-card">
+        <h3>👨🏻‍👩🏻‍👦🏻‍👦🏻 Household Size</h3>
+
+        <div class="input-group">
+            <p>Number of people in household</p>
+            <input type="number" id="household" min="1" placeholder="e.g. 2">
+        </div>
+    </div>
+</div>
+<button type="submit" class="calculate-btn">Calculate My Impact</button>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</form>
+
+{% endblock %}

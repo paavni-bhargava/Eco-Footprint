@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eco footprint</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="{{ active }}">
+
+<!-- PROJECT HEADING -->
+<header class="project-header">
+    <h1>🌍 ECO FOOTPRINT 🌍</h1>
+    <p>Understand • Compare • Reduce Your Carbon Footprint</p>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="/" class="{% if active=='home' %}active{% endif %}">Home</a>
+    <a href="/assessment" class="{% if active=='assessment' %}active{% endif %}">Assessment</a>
+    <a href="/contact" class="{% if active=='contact' %}active{% endif %}">Contact Us</a>
+</nav>
+
+<!-- PAGE CONTENT -->
+<div class="page-content">
+    {% block content %}{% endblock %}
+</div>
+
+<footer>
+    © 2026 Eco footprint | Sustainable Future 🌱
+</footer>
+
+</body>
+</html>

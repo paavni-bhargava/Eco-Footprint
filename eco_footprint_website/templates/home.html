@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="home-content">
+    <h1>What is Carbon Footprint?</h1>
+    <p>
+        Carbon footprint refers to the total amount of greenhouse gases released into the atmosphere as a result of 
+        everyday human activities. These emissions come from the use of electricity, transportation, food consumption, 
+        and various lifestyle choices that rely on fossil fuels and energy resources.
+    </p>
+
+    <h1>Main Sources of Carbon Emissions</h1>
+    <p>
+        <strong>Electricity:</strong> Power generation from fossil fuels</br>
+        <strong>Transportation:</strong> Cars, bikes, buses, and flights</br>
+        <strong>Food:</strong> Meat-based diets have higher emissions</br>
+        <strong>Fuel:</strong> LPG, petrol, and diesel usage</br>
+    </p>
+
+    <h1>Why It Matters?</h1>
+    <p>
+    Excessive carbon emissions contribute directly to climate change, rising global temperatures, and increasing 
+    environmental instability. They affect air quality, water resources, agriculture, and natural ecosystems, 
+    impacting both present and future generations.
+    </p>
+
+    <h1>🌍 Understand Your Carbon Footprint 🌍</h1>
+    <p>
+        Every action we take leaves a mark on the environment. 
+        From the food we eat, the energy we use, to the way we travel — all contribute to our personal carbon footprint.
+        Understanding our daily habits helps identify areas where emissions can be reduced without affecting comfort or lifestyle.
+    </p>
+    <p>
+        By adopting responsible habits like reducing waste, conserving energy, and making eco-friendly choices, we can significantly reduce environmental damage.
+        Awareness and informed decision-making play a crucial role in building a cleaner, greener, and more sustainable planet.
+    </p>
+
+    <div class="tips-container">
+        <div class="tip-card">
+            <span>💡</span>
+            <p>Switch to energy-efficient appliances and LED lighting</p>
+        </div>
+        <div class="tip-card">
+            <span>🚲</span>
+            <p>Use public transport, cycle, or walk whenever possible</p>
+        </div>
+        <div class="tip-card">
+            <span>🥗</span>
+            <p>Eat more plant-based meals to lower your food-related emissions</p>
+        </div>
+        <div class="tip-card">
+            <span>♻️</span>
+            <p>Reduce, Reuse and Recycle minimizing environmental impact & saving resources</p>
+        </div>
+        <div class="tip-card">
+            <h3>💧</h3>
+            <p>Saving water reduces energy consumption required for water treatment</p>
+        </div>
+        <div class="tip-card">
+            <h3>🌍🛍️</h3>
+            <p>Supporting sustainable brands reduces environmental harm</p>
+        </div>
+    </div>
+
+    <a href="/assessment" class="cta-btn">Calculate Your Impact</a>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</section>
+
+{% endblock %}

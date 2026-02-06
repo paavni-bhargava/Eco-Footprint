@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Your Carbon Footprint Result</h2>
+
+<p><strong>Status:</strong> {{ status }}</p>
+<p>Total Estimated Impact: <strong>{{ total }}</strong> units</p>
+
+<h3>How You Compare 🌍</h3>
+<p>
+{% if total < 200 %}
+You are more eco-friendly than an average household 👍
+{% elif total < 400 %}
+Your usage is moderate ⚠️
+{% else %}
+Your carbon usage is higher than an average household🚨
+{% endif %}
+</p>
+
+<h3>Suggestions</h3>
+<ul>
+    <li>Use energy-efficient appliances</li>
+    <li>Reduce private vehicle usage</li>
+    <li>Adopt plant-based meals more often</li>
+</ul>
+<div class="back-btn-container">
+    <a href="{{ url_for('assessment') }}" class="back-btn">
+        ← Back to Assessment
+    </a>
+</div>
+
+{% endblock %}
