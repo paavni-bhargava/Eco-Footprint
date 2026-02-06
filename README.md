@@ -76,20 +76,35 @@ Rather than focusing on heavy analytics, the platform translates daily habits in
 ## 📂 Project Structure
 
 eco_footprint_website/
+
 │
+
 ├── app.py
+
 ├── templates/
+
 │ ├── home.html
+
 │ ├── assessment.html
+
 │ ├── result.html
+
 │ ├── about.html
+
 │ └── contact.html
+
 │
+
 ├── static/
+
 │ ├── style.css
+
 │ ├── script.js
+
 │ └── images/
+
 │
+
 └── README.md
 
 ---
