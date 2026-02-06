@@ -75,7 +75,7 @@ Rather than focusing on heavy analytics, the platform translates daily habits in
 
 ## 📂 Project Structure
 
-project-folder/
+eco_footprint_website/
 │
 ├── app.py
 ├── templates/
