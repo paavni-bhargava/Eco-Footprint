@@ -63,13 +63,13 @@ Rather than focusing on heavy analytics, the platform translates daily habits in
 ## 📸 Screenshots
 
 ### Home Page
-![Home Page](static/images/homepage.png)
+![Home Page](https://github.com/paavni-bhargava/Eco-Footprint/blob/main/eco_footprint_website/static/images/homepage.png)
 
 ### Assessment Page
-![Assessment Page](static/images/assessmentpage.png)
+![Assessment Page](https://github.com/paavni-bhargava/Eco-Footprint/blob/main/eco_footprint_website/static/images/assessmentpage.png)
 
 ### Result Page
-![Result Page](static/images/resultpage.png)
+![Result Page](https://github.com/paavni-bhargava/Eco-Footprint/blob/main/eco_footprint_website/static/images/resultpage.png)
 
 ---
 
